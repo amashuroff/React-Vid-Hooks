@@ -1,0 +1,9 @@
+.flex {
+  display: flex !important;
+    cursor: pointer;
+  align-items: center !important;
+}
+
+.item.flex img {
+    max-width: 180px;
+}
