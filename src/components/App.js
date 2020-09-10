@@ -8,7 +8,7 @@ class App extends React.Component {
   state = { videos: [], selectedVideo: null };
 
   componentDidMount() {
-    this.onTermSubmit('stories');
+    this.onTermSubmit("stories");
   }
 
   onTermSubmit = async (term) => {
@@ -17,9 +17,10 @@ class App extends React.Component {
         q: term,
       },
     });
-    this.setState({ 
+    this.setState({
       videos: response.data.items,
-      selectedVideo: response.data.items[0] });
+      selectedVideo: response.data.items[0],
+    });
   };
 
   onVideoSelect = (video) => {
